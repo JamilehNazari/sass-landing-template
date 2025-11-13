@@ -12,10 +12,7 @@ A single-page web project demonstrating structured SCSS architecture, Gulp autom
 
 - [About the Project](#about-the-project)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Installation & Setup](#installation--setup)
-- [Development](#development)
-- [Build for Production](#build-for-production)
+- [Project Structure][def]
 - [Author](#author)
 
 ---
@@ -53,39 +50,12 @@ sass-landing-template/
 
 ---
 
-## Quick Setup
-
-````bash
-git clone https://github.com/JamilehNazari/sass-landing-template.git
-cd sass-landing-template
-npm install
-gulp
-
----
-
-## Development
-
-- **SCSS Workflow**: All styling is written in SCSS and organized modularly under `src/scss/`.
-- **Gulp Automation**: Use Gulp to compile SCSS to CSS, minify files, and handle live-reloading during development.
-- **Custom Scripts**: AOS and other JavaScript enhancements are included for scroll animations and simple interactivity.
-
-
----
-
-## Build for Production
-
-To build the project for production, run:
-
-```bash
-gulp build
-
-
----
-
 ## Author
 
 **Jamileh Nazari**
 
 - GitHub: [JamilehNazari](https://github.com/JamilehNazari)
 - LinkedIn: [Jamileh Nazari](https://www.linkedin.com/in/jamilehnazari)
-````
+
+
+[def]: #project-structure
