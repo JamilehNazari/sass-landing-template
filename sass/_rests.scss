@@ -1,0 +1,126 @@
+// rest
+@font-face {
+  font-family: "$font-family-satoshi";
+  src: url("#{$fonts-path}/Satoshi-Light.woff2") format("woff2"),
+    url("#{$fonts-path}/Satoshi-Light.ttf") format("truetype");
+  font-weight: $font-weight-light;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
+@font-face {
+  font-family: "$font-family-satoshi";
+  src: url("#{$fonts-path}/Satoshi-Regular.woff2") format("woff2"),
+    url("#{$fonts-path}/Satoshi-Regular.ttf") format("truetype");
+  font-weight: $font-weight-regular;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
+@font-face {
+  font-family: "$font-family-satoshi";
+  src: url("#{$fonts-path}/Satoshi-Medium.woff2") format("woff2"),
+    url("#{$fonts-path}/Satoshi-Medium.ttf") format("truetype");
+  font-weight: $font-weight-medium;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
+@font-face {
+  font-family: "$font-family-satoshi";
+  src: url("#{$fonts-path}/Satoshi-Bold.woff2") format("woff2"),
+    url("#{$fonts-path}/Satoshi-Bold.ttf") format("truetype");
+  font-weight: $font-weight-bold;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+/* ================================
+   INTER FONT
+   For Paragraphs & Details
+================================= */
+
+/* Light (300) */
+@font-face {
+  font-family: "$font-family-inter";
+  src: url("#{$fonts-path}/Inter_18pt-Light.ttf") format("truetype"),
+    url("#{$fonts-path}/Inter_24pt-Light.ttf") format("truetype"),
+    url("#{$fonts-path}/Inter_28pt-Light.ttf") format("truetype");
+  font-weight: $font-weight-light;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
+/* Regular (400) */
+@font-face {
+  font-family: "$font-family-inter";
+  src: url("#{$fonts-path}/Inter_18pt-Regular.ttf") format("truetype"),
+    url("#{$fonts-path}/Inter_24pt-Regular.ttf") format("truetype"),
+    url("#{$fonts-path}/Inter_28pt-Regular.ttf") format("truetype");
+  font-weight: $font-weight-regular;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
+/* Medium (500) */
+@font-face {
+  font-family: "$font-family-inter";
+  src: url("#{$fonts-path}/Inter_18pt-Medium.ttf") format("truetype"),
+    url("#{$fonts-path}/Inter_24pt-Medium.ttf") format("truetype"),
+    url("#{$fonts-path}/Inter_28pt-Medium.ttf") format("truetype");
+  font-weight: $font-weight-medium;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
+/* SemiBold (600) */
+@font-face {
+  font-family: "$font-family-inter";
+  src: url("#{$fonts-path}/Inter_28pt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+// rest
+* {
+  font-family: $font-family-satoshi;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: ltr;
+}
+body {
+  font-family: $font-family-satoshi;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-inter;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.mt-200 {
+  margin-top: 200px;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+  position: relative;
+}
+.row {
+  @include flex(flex, center, null);
+}
+.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}

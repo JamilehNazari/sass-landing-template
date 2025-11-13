@@ -1,0 +1,92 @@
+// course style
+#course {
+  position: relative;
+  margin-top: 200px;
+  .pipe {
+    position: absolute;
+    width: 1722px;
+    height: 370px;
+    background: rgba(140, 124, 229, 0.08);
+    top: 83px;
+    left: -80px;
+    @include border-radius(250px, 0, 0, 250px);
+  }
+  .row {
+    .course {
+      flex-direction: column;
+      @include section-divider(flex, 30%, 30%);
+      background-color: #fff;
+      position: relative;
+      border-bottom: 4px solid red;
+      @include border-radius(0, 0, 5px, 5px);
+      cursor: pointer;
+      @include margin-padding(0, 16px, 0, 16px);
+      transition: box-shadow 0.5s ease;
+      &:hover {
+        box-shadow: 0 0 13px 0px rgba(95, 95, 95, 0.5);
+      }
+      &:hover .teacher {
+        top: -54px;
+      }
+      &:hover .teacher-name {
+        left: 70px;
+        width: auto;
+        max-width: 250px;
+      }
+      .status {
+        position: absolute;
+        font-size: 12px;
+        right: 10px;
+        top: 10px;
+        background: rgba(46, 125, 222, 0.9);
+        color: #fff;
+        @include margin-padding(2px, 20px, 2px, 20px, false);
+        border-radius: 2px;
+      }
+      .teacher {
+        position: absolute;
+        top: -34px;
+        left: 9px;
+        z-index: -1;
+        width: 54px;
+        transition: top 1s ease;
+      }
+      .teacher-name {
+        position: absolute;
+        top: -30px;
+        left: 9px;
+        font-size: $defult-font-size - 3px;
+        z-index: -2;
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        transition: all 1s ease;
+      }
+      a {
+        margin: 10px;
+        font-size: $defult-font-size + 2px;
+        color: #313131;
+      }
+      .meta {
+        font-size: $defult-font-size - 2px;
+        @include margin-padding(0, 10px, 0, 10px);
+        @include margin-padding(16px, 0, 12px, 0, false);
+        display: flex;
+        border-top: 1px solid #efefef;
+        span:nth-child(1) {
+          margin-right: auto;
+          // @include margin-padding(0, 0, 0, auto);
+          i {
+            color: #45a1ff;
+            @include margin-padding(0, 0, 0, 3px);
+          }
+        }
+        span:nth-child(2) {
+          @include margin-padding(0, 8px, 0, 8px, false);
+          color: #37b537;
+          text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}
