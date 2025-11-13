@@ -39,23 +39,29 @@ It is designed as a **portfolio-ready project** for developers seeking to demons
 ## Project Structure
 
 sass-landing-template/
-├─ src/
-│ ├─ scss/ # SCSS source files
-│ ├─ js/ # JavaScript files
-│ └─ index.html # Main HTML file
-├─ dist/ # Compiled CSS and production-ready files
-├─ gulpfile.js # Gulp tasks configuration
-├─ package.json # NPM dependencies and scripts
-└─ README.md # Project documentation
 
----
+|\_ src/
+
+│ ├─ scss/ # SCSS source files
+
+│ ├─ js/ # JavaScript files
+
+│ └─ index.html # Main HTML file
+
+├─ dist/ # Compiled CSS and production-ready files
+
+├─ gulpfile.js # Gulp tasks configuration
+
+├─ package.json # NPM dependencies and scripts
+
+└─ README.md # Project documentation
 
 ## Author
 
 **Jamileh Nazari**
 
 - GitHub: [JamilehNazari](https://github.com/JamilehNazari)
-- LinkedIn: [Jamileh Nazari](https://www.linkedin.com/in/jamilehnazari)
 
+- LinkedIn: [Jamileh Nazari](https://www.linkedin.com/in/jamilehnazari)
 
 [def]: #project-structure
