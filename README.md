@@ -3,18 +3,19 @@
 A single-page web project demonstrating structured SCSS architecture, Gulp automation, and modern frontend development workflow.
 
 ![Project Screenshot](./screenshot.png)
+
 > Screenshot will be added soon.
 
 ---
 
 ## Table of Contents
+
 - [About the Project](#about-the-project)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
 - [Installation & Setup](#installation--setup)
 - [Development](#development)
 - [Build for Production](#build-for-production)
-- [Future Improvements](#future-improvements)
 - [Author](#author)
 
 ---
@@ -29,14 +30,62 @@ It is designed as a **portfolio-ready project** for developers seeking to demons
 
 ## Technologies Used
 
-- **HTML5** – Structure of the webpage  
-- **SCSS (Sass)** – Modular and maintainable CSS workflow  
-- **Bootstrap** – Utility classes and layout support  
-- **Gulp** – Automation tasks (compiling SCSS, minifying CSS, etc.)  
-- **AOS** – Scroll animations  
+- **HTML5** – Structure of the webpage
+- **SCSS (Sass)** – Modular and maintainable CSS workflow
+- **Bootstrap** – Utility classes and layout support
+- **Gulp** – Automation tasks (compiling SCSS, minifying CSS, etc.)
+- **AOS** – Scroll animations
 - **NPM** – Dependency management
 
 ---
 
 ## Project Structure
 
+sass-landing-template/
+├─ src/
+│ ├─ scss/ # SCSS source files
+│ ├─ js/ # JavaScript files
+│ └─ index.html # Main HTML file
+├─ dist/ # Compiled CSS and production-ready files
+├─ gulpfile.js # Gulp tasks configuration
+├─ package.json # NPM dependencies and scripts
+└─ README.md # Project documentation
+
+---
+
+## Quick Setup
+
+````bash
+git clone https://github.com/JamilehNazari/sass-landing-template.git
+cd sass-landing-template
+npm install
+gulp
+
+---
+
+## Development
+
+- **SCSS Workflow**: All styling is written in SCSS and organized modularly under `src/scss/`.
+- **Gulp Automation**: Use Gulp to compile SCSS to CSS, minify files, and handle live-reloading during development.
+- **Custom Scripts**: AOS and other JavaScript enhancements are included for scroll animations and simple interactivity.
+
+
+---
+
+## Build for Production
+
+To build the project for production, run:
+
+```bash
+gulp build
+
+
+---
+
+## Author
+
+**Jamileh Nazari**
+
+- GitHub: [JamilehNazari](https://github.com/JamilehNazari)
+- LinkedIn: [Jamileh Nazari](https://www.linkedin.com/in/jamilehnazari)
+````
